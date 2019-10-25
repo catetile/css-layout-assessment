@@ -3,11 +3,14 @@ body {
     color: #333;
     margin: 0;
     font: 1.2em / 1.2 Arial, Helvetica, sans-serif;
+
 }
 
 img {
+    float: left;
     max-width: 100%;
     display: block;
+    padding: 0 px 20 px 0px opx;
 }
 
 .logo {
@@ -21,14 +24,19 @@ img {
     margin: 0 auto;
     padding: 0 20px;
     max-width: 980px;
+    display: flex;
 }
 
 nav {
     background-color: #000;
     padding: 0.5em;
+    list-style-position: inherit;
 }
 
 nav ul {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -38,6 +46,10 @@ nav a {
     color: #fff;
     text-decoration: none;
     padding: 0.5em 1em;
+    display: grid;
+    grid-template-columns: repeat(1);
+    grid-template-rows: repeat(6);
+    grid-gap: 15px;
 }
 
 .photos {
